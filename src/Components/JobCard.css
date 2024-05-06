@@ -1,0 +1,100 @@
+/* Job Card Container */
+.job-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+
+  .MuiTypography-root.MuiTypography-body1.css-9spv16{
+    background-color: #ffffff; /* Light grey background */
+    border-radius: 10px; 
+    width: 60%;
+    padding: 2px; /* Some padding */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  }
+/* Container */
+.MuiBox-root.css-1mrd89u {
+    display: flex; /* Make the container a flex container */
+    gap: 0.5em;
+}
+
+/* Image */
+.MuiBox-root.css-bj12qo {
+    width: 5rem;
+    height: auto; /* Maintain aspect ratio */
+}
+
+  /* Company Logo */
+  .job-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+.info-container h2, .info-container h3, .info-container p {
+    margin: 5px 1px; /* Adjust this value to increase or decrease the spacing */
+    margin-left: 10px;
+}
+  
+  /* Company Name and Job Title */
+  .job-card .info-container h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .job-card .info-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Company Details */
+  .job-card .info-container p {
+    margin-bottom: 5px;
+  }
+  
+  /* Job Description */
+  .job-card .MuiBox-root.css-1m7bgf1 p {
+    margin-bottom: 5px;
+  }
+  
+  /* Apply Button */
+  .job-card .status-container button {
+    width: 100%;
+    background-color: #55efc4;
+    color: #000;
+    font-weight: 500;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .job-card .status-container button:hover {
+    background-color: #00b894;
+  }
+  
+  /* Apply Button */
+  .apply-button {
+    width: 100%;
+    background-color: #55efc4; /* Green background color */
+    color: #000;
+    font-weight: 500;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .apply-button:hover {
+    background-color: rgb(85, 239, 196); /* Darker green color on hover */
+  }
+  
+  
+  .MuiBox-root.css-11repv5 {
+    padding:4px 4px;
+    color: blue; /* Make the text blue */
+    text-align: center; /* Center the text */
+  }
