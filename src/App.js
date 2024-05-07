@@ -12,6 +12,7 @@ function App() {
     minBasePay: ''
   });
   const [offset, setOffset] = useState(0);
+  const [loading, setLoading] = useState(false); // Add loading state
   const limit = 40;
   const scrollThreshold = 50; // Adjust this value as needed
 
@@ -24,6 +25,7 @@ function App() {
   }, [filters]);
 
   const fetchJobListings = async () => {
+    setLoading(true); // Set loading to true when fetching data
     const requestOptions = {
       method: 'POST',
       headers: {
@@ -55,6 +57,8 @@ function App() {
       }
     } catch (error) {
       console.error(error);
+    } finally {
+      setLoading(false); // Set loading to false when data fetching is completed
     }
   };
 
@@ -135,9 +139,17 @@ function App() {
         <button onClick={clearFilters}>Clear Filters</button>
       </div>
       <div className="job-listings">
-        {jobListings.map((job, index) => (
-          <JobCard key={index} job={job} />
-        ))}
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
+          jobListings.length > 0 ? (
+            jobListings.map((job, index) => (
+              <JobCard key={index} job={job} />
+            ))
+          ) : (
+            <p>No jobs match the specified filters.</p>
+          )
+        )}
       </div>
     </div>
   );
