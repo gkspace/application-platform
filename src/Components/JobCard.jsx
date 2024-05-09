@@ -51,7 +51,7 @@ const JobCard = ({ job, handleApply }) => {
                     </div>
                 </div>
                 <div className="MuiBox-root css-11repv5">
-                    <button className="apply-button"}>⚡Apply</button>
+                    <button className="apply-button">⚡Apply</button>
                 </div>
             </div>
         </div>
